@@ -9,12 +9,8 @@ edition = "2021"
 lib = { workspace = true }
 log = { workspace = true }
 
-[dev-dependencies]
 mod1 = { path = "default-module/mod1" }
 
-[workspace]
-members = ["default-module/mod1"]
-
 [workspace.dependencies]
-lib = { path = "lib" }
+lib = { path = "lib", version = "*" }
 log = "0.4"

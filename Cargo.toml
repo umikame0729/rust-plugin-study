@@ -9,9 +9,12 @@ edition = "2021"
 lib = { workspace = true }
 log = { workspace = true }
 
-mod1 = { path = "default-module/mod1" }
+# mod1 = { path = "default-module/mod1" }
 
 [workspace.dependencies]
 lib = { path = "lib", version = "*" }
 log = "0.4"
 anyhow = "1"
+
+[workspace]
+members = ["default-module/mod1"]

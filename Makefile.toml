@@ -1,0 +1,11 @@
+# [env]
+# CARGO_MAKE_EXTEND_WORKSPACE_MAKEFILE = false
+
+[tasks.build]
+args = ["build", "--workspace"]
+
+[tasks.run]
+workspace = false
+dependencies = ["build"]
+command = "cargo"
+args = ["run"]

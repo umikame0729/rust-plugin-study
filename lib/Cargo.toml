@@ -9,5 +9,5 @@ crate-type = ["rlib", "dylib"]
 
 [dependencies]
 libloading = "0.7"
-dlopen2 = "0.4"
 log = { workspace = true }
+anyhow = { workspace = true }

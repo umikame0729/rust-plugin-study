@@ -14,3 +14,4 @@ mod1 = { path = "default-module/mod1" }
 [workspace.dependencies]
 lib = { path = "lib", version = "*" }
 log = "0.4"
+anyhow = "1"
